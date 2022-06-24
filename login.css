@@ -1,0 +1,120 @@
+.login-register-text {
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: #6c5ce7;
+}
+.flex-container1 {
+    margin-top:8rem;
+    display: flex;
+}
+.flex-container1 > form {
+    background-color: #F0ECE3;
+    margin: 20px ; 
+    padding: 20px;
+    border-radius:10px;
+    width:50%;
+    text-align:center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.flex-container1 > form > h2{
+    margin-top:15px;
+    color: #74684E; 
+     FONT-SIZE: 33PX;
+
+}
+#box_left{
+    margin-left:30px;
+}
+#box_rigth{
+    margin-right:30px;
+}
+.flex-container1 > form > p{
+    width: 66%;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-left: 17%;
+    margin-top: 15%;
+    margin-bottom: 7.9rem;
+    font-size: 1.5REM;
+}
+.flex-container1 > form > .btn_login , .btn_login_a{
+    margin-top:15%;
+    margin-bottom:5%;
+    border-radius:10px;
+    background:#a68DAD;
+    color:#FFFAF6;
+    border:none;
+    font-size: 1.5rem;
+}
+.flex-container1 > form > .btn_login{
+    PADDING: 10px 176px;
+}
+.flex-container1 > form > .btn_login_a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 158px;
+}
+.flex-container1 > form >  .btn_login:hover{   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.flex-container1 > form >  .btn_login_a:hover{   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.flex-container1 > form > h4 , h6{
+    margin-top:26px; 
+}
+.flex-container1 > form > h4 {
+    font-size: 20px;
+}
+.textbox_login{
+    display:block;
+    /* flex-direction:column;
+    margin-top:30px;
+    width:80%; */
+}
+.textbox_login > .text_login{
+    margin-top:41px;
+    border:none;
+    border-radius:10px;
+    padding:5px;
+    width:80%;
+    margin-right:0%;
+    font-size: 1rem;
+    PADDING: 15PX;
+}
+.textbox_login p{
+    color: red;
+    position: absolute;
+    left: 54rem;
+    top: 27.6rem;
+}
+@media (max-width: 500px)
+{
+    .flex-container1 {
+        margin-top:40px;
+        display: block;
+    }
+    .flex-container1 > form {   
+        width:90%;
+    }
+    .flex-container1 > form > .btn_login{
+        padding:10px;
+    }
+    #box_left{
+        margin-left:12px;
+    }
+    #box_rigth{
+        margin-right:12px;
+    }
+    .flex-container1 > form > .btn_login_a{
+        
+        padding: 10px 43px;
+    }
+    .flex-container1 > form > .btn_login{
+        PADDING: 10px 73px;
+    }
+}

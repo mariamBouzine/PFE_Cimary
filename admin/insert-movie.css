@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+	
+		.main,.main2,.main3{  
+			border: 2px solid #DFD3C3;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		  background-color:#c7b198;
+		  border-radius: 15px;		
+		}
+    .main2{
+      margin-left: 1.5rem;
+      height: 452px;
+      width: 25rem;
+      margin-top: 63px;
+    }
+    .main{
+      margin-left: 2rem;
+      height: 647px;
+			width: 76.5rem;
+    }
+    .main3{
+      margin-left: 12rem;
+      height: 430px;
+      width: 58.5rem;
+      margin-top: 4rem;
+    }
+		input::placeholder{
+			color:transparent
+		}
+		.one{
+			display: block;
+			padding: 40px 0;
+			position: relative;
+			background-color: transparent;
+      margin-left: 34px;
+      top: 2rem;
+		}
+	
+		label{
+			position: absolute;
+			top: 0;
+      font-size: 1rem;
+			top: 2px;
+			display: block;
+			transition: .2s;
+			color: #fff;
+			
+		}
+		.input{
+			width: 100%;
+			height: 40px;
+			border: 0;
+			outline: 0;
+			border-bottom: 1px solid #fff;
+			font-size: 1.4rem;
+			background-color: transparent;
+			color: white;
+		}
+		.input:placeholder-shown ~ label{
+			font-size: 1rem;
+			cursor: text;
+			top: 18px;
+			color: white;
+      /* font-weight:200 */
+		}
+    textarea:placeholder-shown ~ label{
+      font-size: 1rem;
+			cursor: text;
+			top: 18px;
+			color: white;
+      /* font-weight:200 */
+    }
+		.input:focus ~ label{
+      top: 0;
+      font-size: 1.1rem;
+      /* font-weight: 600; */
+		  color: #A68DAD ;
+}
+		.input:focus{
+			border-width: 2px;
+			border-image: linear-gradient(to right,);
+			border-image: linear-gradient(to right,#A68DAD ,#C7B198);
+			border-image-slice: 1;
+		}
+
+.column{
+  display: flex;
+}
+
+.btn {
+  border: none;
+  width: 150px;
+  height: 50px;
+  background: #dfd3c3;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn.clicked {
+  animation: scale 0.3s ease-in-out 0.9s both, shrink 4s ease-in-out forwards;
+}
+
+.btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  pointer-events: none;
+  /* font-weight:200; */
+  letter-spacing:2.2px
+}
+.butno{position:relative;display:block;width:150px;margin-top:60px}
+
+.btn.clicked span {
+  animation: spanShrink 4s ease-in-out forwards;
+}
+
+
+
+.btn .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke-width: 3;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  width: 56px;
+  height: 56px;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+}
+
+.btn.clicked .checkmark {
+  animation: stroke 4s ease-in-out 0.6s forwards;
+}
+
+
+@keyframes shrink {
+  15% {
+   width: 50px; 
+  }
+  85% {
+    width: 50px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.1);
+  }
+  65% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes stroke {
+  20% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  70% {
+    stroke-dashoffset: 48;
+  }
+}
+
+@keyframes spanShrink {
+  10% {
+   opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+option {
+  background-color: #362616;
+
+}

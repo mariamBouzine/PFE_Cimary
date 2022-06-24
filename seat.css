@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.body {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+.movie-container {
+  margin: 90px 0 20PX 0;
+}
+.movie-container select {
+  background-color: #C7B198;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #ffffff;
+}
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DFD3C3;
+  width: 8%;
+  padding: 5px;
+  /* margin: 10px 20px; */
+  margin-left: 2%;
+  margin-top: 20px;
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+}
+li .seat.selected{
+  background-color: #A68DAD;
+  COLOR: #A68DAD;
+}
+li .seat.selected , li .seat.sold , li .seat{
+  width: 2.9REM;
+  height: 2.4rem;
+  MARGIN-BOTTOM: 27PX;
+  MARGIN-RIGHT: 12PX;
+}
+li .seat.sold{
+  background-color: #9F9EA3;
+  COLOR: #9F9EA3;
+}
+li .seat{
+  color: #DFD3C3;
+}
+.seat.selected {
+  background-color: #A68DAD;
+}
+
+.seat.sold {
+  background-color: #9F9EA3;
+}
+.seat:nth-child(2n){
+  margin-right: 10%;
+}
+.seat:nth-child(4n){
+  margin-right: 0;
+}
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.showcase .seat:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+.showcase {
+  background: #F0ECE3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #424242;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+}
+#row_cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  background-color: #362616;
+  height: 158px;
+  width: 33%;
+  margin: 58px 0;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 70%);
+}
+button.text{
+  background-color: #A68DAD;
+  padding: 15px;
+  margin: 58px 0 5px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  color: #F0ECE3;
+  font-size: 1rem;
+}
+button.text span{
+  color: #76634F;
+  font-weight: 700;
+  font-size: 1rem;
+}
+@media screen and (max-width: 800px){
+  .movie-container select ,.movie-container  label{
+    margin-left: 81px;
+  }
+  .showcase {
+    width: 23rem;
+    margin: 0;
+  }
+  li .seat.selected, li .seat.sold, li .seat {
+    width: 1.9REM;
+    height: 1.4rem;
+  }
+  .screen {
+    height: 158px;
+    width: 85%;
+  }
+  .row {
+    width: 98%;
+  }
+  button.text {
+    margin: 58px 0 5px 0;
+    width: 20rem;
+  }
+  .showcase li {
+    margin: 0 0px;
+  }
+  .movie-container {
+    margin: 143px 0 55PX 0;
+  }
+}

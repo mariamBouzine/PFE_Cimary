@@ -1,0 +1,96 @@
+.newAROUND{
+    color: #74684E;
+    margin-top: 50px;
+    text-align: center;
+}
+.bg_form{
+    background-color: #F0ECE3;
+    width: 60%;
+    margin-left: 19%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 49rem;
+}
+.inputs{
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 33%;
+}
+input{
+    margin-top: 30px;
+    height: 37px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+.btn_sign{
+    margin-top: 3rem;
+    border-radius:10px;
+    background:#a68DAD;
+    color:#FFFAF6;
+    border:none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0px;
+}
+.btn_sign:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.signUp{
+    margin-top: 5rem;
+}
+/* /////////////animaion input///////////////////////// */
+.input-container{
+    margin-top: 30px;
+    width: 331px;
+    position: relative;
+}
+.label{
+    position: absolute;
+    left: 10px;
+    top:14px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: #b3B3B3;
+}
+.text-input{
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5PX;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: rgb(0, 0, 0);
+}
+.label::before{
+    content: "";
+    height: 5PX;
+    position: absolute;
+    left: 0PX;
+    top: 10PX;
+    width: 100%;
+    z-index: -1;
+}
+.text-input:focus{
+    border: 2PX solid #C7B198;
+}
+.text-input:focus + .label,
+.filled{
+    top: -10px;
+    color: #7E4CCB;
+    font-size: 14px;
+}
+.text-input::placeholder{
+    font-size: 15px;
+    font-weight: 100;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.text-input:focus::placeholder{
+    opacity: 1;
+}
